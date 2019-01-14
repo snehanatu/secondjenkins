@@ -1,16 +1,10 @@
-'pipeline {
-     agent any
-     stages {
-          stage('First Stage') {
-               steps {
-                    echo 'Step 1. Hello Jenkins'
-               }
-          }
-          stage('Second Stage') {
-               steps {
-                    echo 'Step 2. Jenkins?'
-                    echo 'Step 3. Are you there?'
-               }
-          }
-     }
-}
+pipeline {
+           agent any
+           stages {
+                stage("Jenkins") {
+                     steps {
+                          echo 'Hello Jenkins'
+                     }
+                }
+           }
+      }
